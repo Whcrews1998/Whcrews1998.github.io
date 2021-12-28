@@ -102,7 +102,7 @@
     display: block;
     
     width: 85vw;
-    height: 100vh;
+    height: 100%;
 
     padding-top: 140px;
     margin-right: auto;
@@ -130,6 +130,7 @@
 }
 
 .s1 {
+    display: block;
     padding: 20px 10%;
     overflow: auto;
 }
