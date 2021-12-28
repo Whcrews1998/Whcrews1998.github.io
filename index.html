@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brick Breaker!</title>
+    <link rel="stylesheet" href="style.css">
+    <title>My Personal Website</title>
 
-    <style>
-        #gameScreen {
-            border: 1px solid black;
-        }
-        img {
-            display: none;
-        }
-    </style>
+    <script>
+        let background = '#ffffff';
+
+        let wrapper = document.getElementById("wrapper");
+        wrapper.attributes['style'].textContent='background-color:'+ background;
+    </script>
+
 </head>
-<body>
-    <img src="assets/images/ball.png" alt="" id="img_ball">
-    <img src="assets/images/brick.png" alt="" id="img_brick">
-    <canvas id="gameScreen" width="800" height="600"></canvas>
 
-    <script type="module" src="/src/index.js"></script>
-</body>
+<body>
+    <div class="content-wrapper" id="wrapper">
+        <nav class="nav-bar">
+            <ul class="nav-bar-list">
+                <li class="current-page"><a href="#">About Me</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Certificates</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <article class="about-me">
+            <img src="assets/img-about-me.png" alt="About me IMG" class="img-about">
+            <section class="s1">
+                <h2>About Me</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+            </section>
+        </article>
+    </div>
+</body>    
 </html>
