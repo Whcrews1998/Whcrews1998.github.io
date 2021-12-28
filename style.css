@@ -136,11 +136,13 @@
 
 .s1 h2 {
     margin-bottom: 20px;
+    overflow: inherit;
 }
 
 .s1 p {
     line-height: 50px;
     margin: 20px 0px;
     text-indent: 60px;
+    overflow: inherit;
 }
 
