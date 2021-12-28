@@ -131,6 +131,7 @@
 
 .s1 {
     padding: 20px 10%;
+    overflow: auto;
 }
 
 .s1 h2 {
