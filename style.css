@@ -11,11 +11,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
 body {
-    box-sizing: border-box;
+    position: relative;
     width: 100vw;
     height: 2000px;
 }
@@ -23,6 +24,7 @@ body {
 
 /* CONTENT WRAPPER */
 .content-wrapper {
+    overflow: hidden;
     box-sizing: border-box;
     background-color: var(--main-background-color);
 
@@ -41,23 +43,33 @@ body {
 
 /* --- NAVIGATION BAR STYLE  --- */
 .nav-bar {
-    width: 100vw;
-    height: auto;
-
+    z-index: 2;
     position: fixed;
-    z-index: 100;
-    top: 0px;
 
+    width: 100vw;
+    height: 10vh;
+    
     background-color: var(--navbar-background-color);
 }
 
 .nav-bar-list {
-    list-style: none;
+    position: relative;
+    width: inherit;
+    height: inherit;
 
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
 
+    list-style: none;
+    text-align: center;
+}
+
+.nav-bar-list li{
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: auto;
+    
 }
 
 .nav-bar-list li.current-page {
@@ -65,11 +77,9 @@ body {
 }
 
 .nav-bar-list a {
-    display: inline-block;
-    padding: 25px;
-
-    text-decoration: none;
-    color: white;
+    border: solid red 5px;
+    margin: auto;
+    font-size: auto;
 }
 
 
@@ -93,6 +103,9 @@ body {
     }
   }
 
+  
+
+
 
 
 
@@ -104,13 +117,13 @@ body {
     background-color: var(--article-background-color);
 
     /*border: 1px solid red;*/
-    top: 0px;
+
     display: block;
     
     width: 85vw;
     height: 100%;
 
-    padding-top: 140px;
+    padding-top: 5%;
     margin-right: auto;
     margin-left: auto;
 
@@ -119,13 +132,13 @@ body {
 }
 
 .img-about {
-    border: 10px solid rgba(255, 124, 124, 0.158);
+    border: 1vw solid rgba(255, 124, 124, 0.158);
 
     display: block;
     position: relative;
 
-    width: 500px;
-    height: 500px;
+    width: 30vw;
+    height: auto;
 
     border-radius: 100%;
     
